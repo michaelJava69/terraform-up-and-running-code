@@ -14,11 +14,11 @@ terraform {
     # This backend configuration is filled in automatically at test time by Terratest. If you wish to run this example
     # manually, uncomment and fill in the config below.
 
-    # bucket         = "<YOUR S3 BUCKET>"
-    # key            = "<SOME PATH>/terraform.tfstate"
-    # region         = "us-east-2"
-    # dynamodb_table = "<YOUR DYNAMODB TABLE>"
-    # encrypt        = true
+     bucket         = "terraform-s3-bucket-azuka"
+     key            = "stage/data-stores/terraform.tfstate"
+     region         = "us-east-2"
+     dynamodb_table = "terrform-dynamoDB-table-azuka"
+     encrypt        = true
   }
 }
 
