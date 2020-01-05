@@ -1,4 +1,4 @@
-# ---------------------------------------------------------------------------------------------------------------------
+	# ---------------------------------------------------------------------------------------------------------------------
 # REQUIRED PARAMETERS
 # You must provide a value for each of these parameters.
 # ---------------------------------------------------------------------------------------------------------------------
@@ -38,15 +38,42 @@ variable "enable_autoscaling" {
   type        = bool
 }
 
+
+
+#######################################
+# used 0.5 loops and expressions
+##########################################
+ 
 variable "enable_new_user_data" {
   description = "If set to true, use the new User Data script"
   type        = bool
 }
 
+
+
 # ---------------------------------------------------------------------------------------------------------------------
 # OPTIONAL PARAMETERS
 # These parameters have reasonable defaults.
 # ---------------------------------------------------------------------------------------------------------------------
+
+
+##############################################
+# next two for zero downtime section of 0.5
+##############################################
+
+variable "ami" {
+  description = "The AMI to run in the cluster"
+  default     = "ami-0c55b159cbfafe1f0"
+  type        = string
+}
+
+variable "server_text" {
+  description = "The text the web server should return"
+  default     = "Hello, World"
+  type        = string
+}
+
+
 
 variable "custom_tags" {
   description = "Custom tags to set on the Instances in the ASG"
