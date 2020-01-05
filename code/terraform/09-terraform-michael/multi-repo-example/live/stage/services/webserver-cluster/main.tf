@@ -19,7 +19,11 @@ module "webserver_cluster" {
   source = "github.com/michaelJava69/terraform-up-and-running-code//code/terraform/09-terraform-michael/module-example/modules/services/webserver-cluster?ref=v0.4.0"
   
   # for 0.5 zero downtime
-  source = "github.com/michaelJava69/terraform-up-and-running-code//code/terraform/09-terraform-michael/module-example/modules/services/webserver-cluster?ref=v0.5.0"
+  source = "github.com/michaelJava69/terraform-up-and-running-code//code/terraform/09-terraform-michael/module-example/modules/services/webserver-cluster?ref=v0.5.1"
+
+  ami         = "ami-0c55b159cbfafe1f0"
+
+  server_text = var.server_text
 
   cluster_name           = var.cluster_name
   db_remote_state_bucket = var.db_remote_state_bucket
