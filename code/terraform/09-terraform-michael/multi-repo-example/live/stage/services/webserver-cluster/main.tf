@@ -16,10 +16,10 @@ module "webserver_cluster" {
   # source = "github.com/brikis98/terraform-up-and-running-code//code/terraform/04-terraform-module/module-example/modules/services/webserver-cluster?ref=v0.1.0"
 
   # for 0.5 loops and expressions
-  source = "github.com/michaelJava69/terraform-up-and-running-code//code/terraform/09-terraform-michael/module-example/modules/services/webserver-cluster?ref=v0.4.0"
+  #source = "github.com/michaelJava69/terraform-up-and-running-code//code/terraform/09-terraform-michael/module-example/modules/services/webserver-cluster?ref=v0.4.0"
   
   # for 0.5 zero downtime
-  source = "github.com/michaelJava69/terraform-up-and-running-code//code/terraform/09-terraform-michael/module-example/modules/services/webserver-cluster?ref=v0.5.1"
+  source = "github.com/michaelJava69/terraform-up-and-running-code//code/terraform/09-terraform-michael/module-example/modules/services/webserver-cluster?ref=v0.5.2"
 
   ami         = "ami-0c55b159cbfafe1f0"
 
