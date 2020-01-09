@@ -2,5 +2,5 @@
 *.tfstate.backup
 .terraform
 *.iml
-/vendor/*
+vendor/*
 *.sh
