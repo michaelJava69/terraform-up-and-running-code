@@ -13,9 +13,11 @@ module "webserver_cluster" {
 
   # Since the terraform-up-and-running-code repo is open source, we're using an HTTPS URL here. If it was a private
   # repo, we'd instead use an SSH URL (git@github.com:brikis98/terraform-up-and-running-code.git) to leverage SSH auth
+  
+  # for 0.1
   # source = "github.com/brikis98/terraform-up-and-running-code//code/terraform/04-terraform-module/module-example/modules/services/webserver-cluster?ref=v0.1.0"
 
-  # for 0.5 loops and expressions
+  # for 0.4 loops and expressions
   #source = "github.com/michaelJava69/terraform-up-and-running-code//code/terraform/09-terraform-michael/module-example/modules/services/webserver-cluster?ref=v0.4.0"
   
   # for 0.5 zero downtime
