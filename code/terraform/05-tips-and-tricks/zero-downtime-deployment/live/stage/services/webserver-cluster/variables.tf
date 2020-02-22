@@ -4,12 +4,12 @@
 # ---------------------------------------------------------------------------------------------------------------------
 
 variable "db_remote_state_bucket" {
-  description = "The name of the S3 bucket used for the database's remote state storage"
+  description = "The name of the S3 bucket used for the database's remote state storage  : terraform-s3-bucket-azuka"
   type        = string
 }
 
 variable "db_remote_state_key" {
-  description = "The name of the key in the S3 bucket used for the database's remote state storage"
+  description = "The name of the key in the S3 bucket used for the database's remote state storage  : stage/data-stores/mysql/terraform.tfstate"
   type        = string
 }
 
@@ -27,5 +27,5 @@ variable "cluster_name" {
 variable "server_text" {
   description = "The text for each EC2 instance to display. You can change this text to force a redeploy."
   type        = string
-  default     = "New server text"
+  default     = "Even newer server text"
 }

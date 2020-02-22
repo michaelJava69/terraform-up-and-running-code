@@ -3,13 +3,15 @@
 # You must provide a value for each of these parameters.
 # ---------------------------------------------------------------------------------------------------------------------
 
+
+
 variable "db_remote_state_bucket" {
-  description = "The name of the S3 bucket for the database's remote state"
+  description = "The name of the S3 bucket for the database's remote state  : terraform-s3-bucket-azuka"
   type        = string
 }
 
 variable "db_remote_state_key" {
-  description = "The path for the database's remote state in S3"
+  description = "The path for the database's remote state in S3  : stage/data-stores/mysql/terraform.tfstate"
   type        = string
 }
 
