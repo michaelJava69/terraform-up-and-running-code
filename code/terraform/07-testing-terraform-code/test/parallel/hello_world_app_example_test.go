@@ -42,7 +42,7 @@ func TestHelloWorldAppExample(t *testing.T)  {
         mysqlAddress := "mock-value-for-test"
         mysqlPort := 3306
 
-        expectedBody := fmt.Sprintf("<h1>%s</h1>\n<p>DB Address: %s</p>\n<p>DB Port: %d</p>", serverText, mysqlAddress, mysqlPort)
+        expectedBody := fmt.Sprintf("<h1>%s</h1>\n<p>DB address: %s</p>\n<p>DB port: %d</p>", serverText, mysqlAddress, mysqlPort)
 
 	maxRetries := 10
 	timeBetweenRetries := 10 * time.Second
